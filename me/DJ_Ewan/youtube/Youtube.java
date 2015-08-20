@@ -76,12 +76,12 @@ public class Youtube extends JavaPlugin{
 			{
 				PlayerInventory pi = player.getInventory();
 				ItemStack megahelmet = new ItemStack(Material.DIAMOND_HELMET, 1);
-				megabow.addUnsafeEnchantment(Enchantment. PROTECTION_ENVIRONMENTAL, 32767);
+				megabow.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 32767);
 				megabow.addUnsafeEnchantment(Enchantment.THORNS, 15);
 				megabow.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
 				megabow.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
 				ItemMeta imhelmet = megahelmet.getItemMeta();
-				imbow.setDisplayName (ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGAHELMET" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+				imhelmet.setDisplayName (ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGAHELMET" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
 				megahelmet.setItemMeta(imhelmet);
 				pi.addItem(megahelmet);
 				player.sendMessage(ChatColor.AQUA + "Here you go!");
@@ -89,6 +89,85 @@ public class Youtube extends JavaPlugin{
 			if (!player.hasPermission("megaweapons.mhelmet")){
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
+		 }
+		 
+		 if (commandLabel.equalsIgnoreCase("megashirt")){
+		 	if (player.hasPermission("megaweapons.mshirt"))
+		 	{
+		 		PlayerInventory pi = player.getInventory();
+		 		ItemStack megashirt = new ItemStack(Material.DIAMOND_CHESTPLATE, 1);
+		 		megashirt.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 32767);
+		 		megashirt.addUnsafeEnchantment(Enchantment.THORNS, 15);
+		 		megashirt.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
+		 		megashirt.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
+		 		ItemMeta imegashirt = megashirt.getItemMeta();
+		 		imegashirt.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGASHIRT" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		megashirt.setItemMeta(imegashirt);
+		 		pi.addItem(megashirt);
+		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
+		 	}
+		 	if (!player.hasPermission("megaweapons.mshirt")){
+		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+		 	}
+		 }
+		 
+		 if (commandLabel.equalsIgnoreCase("megapants")){
+		 	if (player.hasPermission("megaweapons.mpants"))
+		 	{
+		 		PlayerInventory pi = player.getInventory();
+		 		ItemStack megapants = new ItemStack(Material.DIAMOND_LEGGINGS, 1);
+		 		megapants.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 32767);
+		 		megapants.addUnsafeEnchantment(Enchantment.THORNS, 15);
+		 		megapants.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
+		 		megapants.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
+		 		ItemMeta imegapants = megashirt.getItemMeta();
+		 		imegapants.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGAPANTS" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		megapants.setItemMeta(imegapants);
+		 		pi.addItem(megapants);
+		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
+		 	}
+		 	if (!player.hasPermission("megaweapons.mpants")){
+		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+		 	}
+		 }
+		 
+		 if (commandLabel.equalsIgnoreCase("megaboots")){
+		 	if (player.hasPermission("megaweapons.mboots"))
+		 	{
+		 		PlayerInventory pi = player.getInventory();
+		 		ItemStack megaboots = new ItemStack(Material.DIAMOND_BOOTS, 1);
+		 		megaboots.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 32767);
+		 		megaboots.addUnsafeEnchantment(Enchantment.THORNS, 15);
+		 		megaboots.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
+		 		megaboots.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
+		 		ItemMeta imegaboots = megaboots.getItemMeta();
+		 		imegashirt.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGABOOTS" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		megaboots.setItemMeta(imegaboots);
+		 		pi.addItem(megaboots);
+		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
+		 	}
+		 	if (!player.hasPermission("megaweapons.mboots")){
+		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+		 	}
+		 }
+		 
+		 if (commandLabel.equalsIgnoreCase("megaball")){
+		 	if (player.hasPermission("megaweapons.mball"))
+		 	{
+		 		PlayerInventory pi = player.getInventory();
+		 		ItemStack megaball = new ItemStack(Material.SNOW_BALL, 1);
+		 		megaball.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 32767);
+		 		megaball.addUnsafeEnchantment(Enchantment.KNOCKBACK, 20);
+		 		megaball.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 15);
+		 		ItemMeta imegaball = megaball.getItemMeta();
+		 		imegaball.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGABOOTS" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		megaball.setItemMeta(imegaball);
+		 		pi.addItem(megaball);
+		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
+		 	}
+		 	if(!player.hasPermission("megaball.mball")){
+		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+		 	}
 		 }
 	
 	return true;
