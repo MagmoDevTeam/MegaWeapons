@@ -26,7 +26,6 @@ public class Youtube extends JavaPlugin{
 	public void onEnable() {
 		PluginDescriptionFile pdfFile = this.getDescription();
 		this.logger.info(pdfFile.getName() + pdfFile.getVersion() + " Is running.");
-		logger.info("penis");
 	}
 	
 	
