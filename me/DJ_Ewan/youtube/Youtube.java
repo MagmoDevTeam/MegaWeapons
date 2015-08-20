@@ -29,7 +29,7 @@ public class Youtube extends JavaPlugin{
 	}
 	
 	
-	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
+	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args, PlayerInteractEvent e){
 		Player player = (Player) sender;
 		if (commandLabel.equalsIgnoreCase("megasword")){
 			if (player.hasPermission("megaweapons.msword"))
@@ -169,6 +169,29 @@ public class Youtube extends JavaPlugin{
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
 		 }
+		 
+		 if (commandLabel.equalsIgnoreCase("megalauncher"))
+		 {
+		 	if (player.hasPermission("megaweapons.mlauncher")
+		 	{
+		 		PlayerInventory pi = player.getInventory();
+		 		ItemStack megalauncher = new ItemStack(Material.STICK, 1);
+		 		ItemMeta imlauncher = megalauncher.getItemMeta();
+		 		imlauncher.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGALAUNCHER" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		megalauncher.setItemMeta(imlauncher);
+		 		pi.addItem(megalauncher);
+		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
+		 		if(e.getAction().equals(Action.RIGHT_CLICK_AIR)){
+    				if(e.getItem().getType().equals(megalauncher.getType()) && e.getItem().hasItemMeta()){
+      				if(e.getItem().getItemMeta().getDisplayName().equals(megalauncher.getItemMeta().getDisplayName()){
+      					
+      					}
+				  }  
+				}
+		 		
+		 	}
+		 }
+		 	if()
 	
 	return true;
 	
