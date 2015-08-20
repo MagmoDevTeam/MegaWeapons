@@ -71,6 +71,25 @@ public class Youtube extends JavaPlugin{
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
 		 }
+		 if (commandLabel.equalsIgnoreCase("megahelmet")){ 
+			if (player.hasPermission("megaweapons.mhelmet"))
+			{
+				PlayerInventory pi = player.getInventory();
+				ItemStack megahelmet = new ItemStack(Material.DIAMOND_HELMET, 1);
+				megabow.addUnsafeEnchantment(Enchantment. PROTECTION_ENVIRONMENTAL, 32767);
+				megabow.addUnsafeEnchantment(Enchantment.THORNS, 15);
+				megabow.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
+				megabow.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
+				ItemMeta imhelmet = megahelmet.getItemMeta();
+				imbow.setDisplayName (ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGAHELMET" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+				megahelmet.setItemMeta(imhelmet);
+				pi.addItem(megahelmet);
+				player.sendMessage(ChatColor.AQUA + "Here you go!");
+			}
+			if (!player.hasPermission("megaweapons.mhelmet")){
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}
+		 }
 	
 	return true;
 	
