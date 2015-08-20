@@ -10,7 +10,7 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
-import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.ItemMeta; 
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -26,14 +26,15 @@ public class Youtube extends JavaPlugin{
 	public void onEnable() {
 		PluginDescriptionFile pdfFile = this.getDescription();
 		this.logger.info(pdfFile.getName() + pdfFile.getVersion() + " Is running.");
+		logger.info("penis");
 	}
 	
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
+		Player player = (Player) sender;
 		if (commandLabel.equalsIgnoreCase("megasword")){
-			if (player.hasPermission("megaweapons.msword")
+			if (player.hasPermission("megaweapons.msword"))
 			{
-			 	Player player = (Player) sender;
 				PlayerInventory pi = player.getInventory();
 				ItemStack megasword = new ItemStack(Material.DIAMOND_SWORD, 1); 
 				megasword.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 32767);
@@ -44,15 +45,15 @@ public class Youtube extends JavaPlugin{
 				megasword.setItemMeta(imsword);
 				pi.addItem(megasword);
 				player.sendMessage(ChatColor.AQUA + "Here you go!");
-			}else{
-				Player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}if(!player.hasPermission("megaweapons.msword"))
+			{
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
 		}
 	
 		if (commandLabel.equalsIgnoreCase("megabow")){ 
-			if (player.hasPermission("megaweapons.mbow")
+			if (player.hasPermission("megaweapons.mbow"))
 			{
-				Player player = (Player) sender;
 				PlayerInventory pi = player.getInventory();
 				ItemStack megabow = new ItemStack(Material.BOW, 1);
 				megabow.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 32767);
@@ -66,8 +67,9 @@ public class Youtube extends JavaPlugin{
 				ItemStack arrow = new ItemStack(Material.ARROW, 1);
 				pi.addItem(arrow);
 				player.sendMessage(ChatColor.AQUA + "Here you go!");
-			}else{
-				Player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}
+			if (!player.hasPermission("megaweapons.mbow")){
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
 		 }
 	
