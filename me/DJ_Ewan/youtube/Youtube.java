@@ -30,7 +30,7 @@ public class Youtube extends JavaPlugin{
 	}
 	
 	
-	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args, PlayerInteractEvent e){
+	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args){
 		
 		if (cmd.getName().equalsIggnoreCase("megasword") && sender instanceof Player){
 			Player player = (Player) sender;
