@@ -152,21 +152,21 @@ public class Youtube extends JavaPlugin{
 		 	}
 		 }
 		 
-		 if (commandLabel.equalsIgnoreCase("megaball")){
-		 	if (player.hasPermission("megaweapons.mball"))
+		 if (commandLabel.equalsIgnoreCase("megatato")){
+		 	if (player.hasPermission("megaweapons.mtato"))
 		 	{
 		 		PlayerInventory pi = player.getInventory();
-		 		ItemStack megaball = new ItemStack(Material.SNOW_BALL, 1);
+		 		ItemStack megaball = new ItemStack(Material.POTATO, 1);
 		 		megaball.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 32767);
 		 		megaball.addUnsafeEnchantment(Enchantment.KNOCKBACK, 20);
 		 		megaball.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 15);
 		 		ItemMeta imegaball = megaball.getItemMeta();
-		 		imegaball.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGABALL" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		imegaball.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGATATO" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
 		 		megaball.setItemMeta(imegaball);
 		 		pi.addItem(megaball);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
 		 	}
-		 	if(!player.hasPermission("megaball.mball")){
+		 	if(!player.hasPermission("megaball.mtato")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
 		 }
