@@ -50,6 +50,8 @@ public class Youtube extends JavaPlugin{
 			{
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
+			
+			return true;
 		}
 	
 		if (commandLabel.equalsIgnoreCase("megabow")){ 
@@ -73,6 +75,8 @@ public class Youtube extends JavaPlugin{
 			if (!player.hasPermission("megaweapons.mbow")){
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
+			
+			return true;
 		 }
 		 if (commandLabel.equalsIgnoreCase("megahelmet")){ 
 		 	Player player = (Player) sender;
@@ -93,6 +97,8 @@ public class Youtube extends JavaPlugin{
 			if (!player.hasPermission("megaweapons.mhelmet")){
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
+			
+			return true;
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megashirt")){
@@ -114,6 +120,8 @@ public class Youtube extends JavaPlugin{
 		 	if (!player.hasPermission("megaweapons.mshirt")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
+			
+			return true;
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megapants")){
@@ -135,6 +143,8 @@ public class Youtube extends JavaPlugin{
 		 	if (!player.hasPermission("megaweapons.mpants")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
+			
+			return true;
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megaboots")){
@@ -156,6 +166,8 @@ public class Youtube extends JavaPlugin{
 		 	if (!player.hasPermission("megaweapons.mboots")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
+			
+			return true;
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megatato")){
@@ -176,6 +188,8 @@ public class Youtube extends JavaPlugin{
 		 	if(!player.hasPermission("megaweapons.mtato")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
+			
+			return true;
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megacookie")){
@@ -196,6 +210,8 @@ public class Youtube extends JavaPlugin{
 		 	if(!player.hasPermission("megaweapons.mcookie")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
+			
+			return true;
 		 }
 		 
 		// if (commandLabel.equalsIgnoreCase("megalauncher"))
