@@ -8,6 +8,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta; 
@@ -76,10 +77,10 @@ public class Youtube extends JavaPlugin{
 			{
 				PlayerInventory pi = player.getInventory();
 				ItemStack megahelmet = new ItemStack(Material.DIAMOND_HELMET, 1);
-				megabow.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 32767);
-				megabow.addUnsafeEnchantment(Enchantment.THORNS, 15);
-				megabow.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
-				megabow.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
+				megahelmet.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 32767);
+				megahelmet.addUnsafeEnchantment(Enchantment.THORNS, 15);
+				megahelmet.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
+				megahelmet.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
 				ItemMeta imhelmet = megahelmet.getItemMeta();
 				imhelmet.setDisplayName (ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGAHELMET" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
 				megahelmet.setItemMeta(imhelmet);
@@ -120,7 +121,7 @@ public class Youtube extends JavaPlugin{
 		 		megapants.addUnsafeEnchantment(Enchantment.THORNS, 15);
 		 		megapants.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
 		 		megapants.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
-		 		ItemMeta imegapants = megashirt.getItemMeta();
+		 		ItemMeta imegapants = megapants.getItemMeta();
 		 		imegapants.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGAPANTS" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
 		 		megapants.setItemMeta(imegapants);
 		 		pi.addItem(megapants);
@@ -141,7 +142,7 @@ public class Youtube extends JavaPlugin{
 		 		megaboots.addUnsafeEnchantment(Enchantment.DURABILITY, 500);
 		 		megaboots.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
 		 		ItemMeta imegaboots = megaboots.getItemMeta();
-		 		imegashirt.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGABOOTS" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		imegaboots.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGABOOTS" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
 		 		megaboots.setItemMeta(imegaboots);
 		 		pi.addItem(megaboots);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
@@ -170,28 +171,28 @@ public class Youtube extends JavaPlugin{
 		 	}
 		 }
 		 
-		 if (commandLabel.equalsIgnoreCase("megalauncher"))
-		 {
-		 	if (player.hasPermission("megaweapons.mlauncher")
-		 	{
-		 		PlayerInventory pi = player.getInventory();
-		 		ItemStack megalauncher = new ItemStack(Material.STICK, 1);
-		 		ItemMeta imlauncher = megalauncher.getItemMeta();
-		 		imlauncher.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGALAUNCHER" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
-		 		megalauncher.setItemMeta(imlauncher);
-		 		pi.addItem(megalauncher);
-		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
-		 		if(e.getAction().equals(Action.RIGHT_CLICK_AIR)){
-    				if(e.getItem().getType().equals(megalauncher.getType()) && e.getItem().hasItemMeta()){
-      				if(e.getItem().getItemMeta().getDisplayName().equals(megalauncher.getItemMeta().getDisplayName()){
+		// if (commandLabel.equalsIgnoreCase("megalauncher"))
+		 //{
+		 	//if (player.hasPermission("megaweapons.mlauncher")
+		 	//{
+		 	//	PlayerInventory pi = player.getInventory();
+		 	//	ItemStack megalauncher = new ItemStack(Material.STICK, 1);
+		 	//	ItemMeta imlauncher = megalauncher.getItemMeta();
+		 	//	imlauncher.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGALAUNCHER" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 	//	megalauncher.setItemMeta(imlauncher);
+		 	//	pi.addItem(megalauncher);
+		 	//	player.sendMessage(ChatColor.AQUA + "Here you go!");
+		 	//	if(e.getAction().equals(Action.RIGHT_CLICK_AIR)){
+    		//		if(e.getItem().getType().equals(megalauncher.getType()) && e.getItem().hasItemMeta()){
+      		//		if(e.getItem().getItemMeta().getDisplayName().equals(megalauncher.getItemMeta().getDisplayName()){
       					
-      					}
-				  }  
-				}
+      					
+				    
+				
 		 		
-		 	}
-		 }
-		 	if()
+		 	
+		 
+		 	
 	
 	return true;
 	
