@@ -31,8 +31,9 @@ public class Youtube extends JavaPlugin{
 	
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args, PlayerInteractEvent e){
-		Player player = (Player) sender;
+		
 		if (commandLabel.equalsIgnoreCase("megasword")){
+			Player player = (Player) sender;
 			if (player.hasPermission("megaweapons.msword"))
 			{
 				PlayerInventory pi = player.getInventory();
@@ -52,6 +53,7 @@ public class Youtube extends JavaPlugin{
 		}
 	
 		if (commandLabel.equalsIgnoreCase("megabow")){ 
+			Player player = (Player) sender;
 			if (player.hasPermission("megaweapons.mbow"))
 			{
 				PlayerInventory pi = player.getInventory();
@@ -73,6 +75,7 @@ public class Youtube extends JavaPlugin{
 			}
 		 }
 		 if (commandLabel.equalsIgnoreCase("megahelmet")){ 
+		 	Player player = (Player) sender;
 			if (player.hasPermission("megaweapons.mhelmet"))
 			{
 				PlayerInventory pi = player.getInventory();
@@ -93,6 +96,7 @@ public class Youtube extends JavaPlugin{
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megashirt")){
+		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mshirt"))
 		 	{
 		 		PlayerInventory pi = player.getInventory();
@@ -113,6 +117,7 @@ public class Youtube extends JavaPlugin{
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megapants")){
+		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mpants"))
 		 	{
 		 		PlayerInventory pi = player.getInventory();
@@ -133,6 +138,7 @@ public class Youtube extends JavaPlugin{
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megaboots")){
+		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mboots"))
 		 	{
 		 		PlayerInventory pi = player.getInventory();
@@ -153,6 +159,7 @@ public class Youtube extends JavaPlugin{
 		 }
 		 
 		 if (commandLabel.equalsIgnoreCase("megatato")){
+		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mtato"))
 		 	{
 		 		PlayerInventory pi = player.getInventory();
@@ -166,7 +173,27 @@ public class Youtube extends JavaPlugin{
 		 		pi.addItem(megatato);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
 		 	}
-		 	if(!player.hasPermission("megatato.mtato")){
+		 	if(!player.hasPermission("megaweapons.mtato")){
+		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+		 	}
+		 }
+		 
+		 if (commandLabel.equalsIgnoreCase("megacookie")){
+		 	Player player = (Player) sender;
+		 	if (player.hasPermission("megaweapons.mcookie"))
+		 	{
+		 		PlayerInventory pi = player.getInventory();
+		 		ItemStack megacookie = new ItemStack(Material.POTATO, 1);
+		 		megacookie.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 32767);
+		 		megacookie.addUnsafeEnchantment(Enchantment.KNOCKBACK, 20);
+		 		megacookie.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 15);
+		 		ItemMeta imegacookie = megacookie.getItemMeta();
+		 		imegacookie.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGACOOKIE" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		megacookie.setItemMeta(imegacookie);
+		 		pi.addItem(megacookie);
+		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
+		 	}
+		 	if(!player.hasPermission("megaweapons.mcookie")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
 		 }
