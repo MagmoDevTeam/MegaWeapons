@@ -1,7 +1,6 @@
 name: MegaWeapons
 main: me.DJ_Ewan.youtube.Youtube
 version: 2.0
-description: Adds OP weapons and armor into the game.
 commands:
   megasword:
      description: Gives MegaSword.
