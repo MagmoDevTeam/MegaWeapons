@@ -183,7 +183,7 @@ public class Youtube extends JavaPlugin{
 		 	if (player.hasPermission("megaweapons.mcookie"))
 		 	{
 		 		PlayerInventory pi = player.getInventory();
-		 		ItemStack megacookie = new ItemStack(Material.POTATO, 1);
+		 		ItemStack megacookie = new ItemStack(Material.COOKIE, 1);
 		 		megacookie.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 32767);
 		 		megacookie.addUnsafeEnchantment(Enchantment.KNOCKBACK, 20);
 		 		megacookie.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 15);
