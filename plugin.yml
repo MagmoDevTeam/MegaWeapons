@@ -1,0 +1,19 @@
+name: MegaWeapons
+main: me.DJ_Ewan.youtube.Youtube
+version: 2.0
+description: Adds OP weapons and armor into the game.
+commands:
+  megasword:
+     description: Gives MegaSword.
+  megabow:
+     description: Gives MegaBow.
+  megahelmet:
+    description: Gives MegaHelmet.
+  megashirt:
+     description: Gives MegaShirt.
+  megapants:
+     description: Gives MegaPants.
+  megatato:
+     description: Gives MegaTato.
+  megacookie:
+     description: Gives MegaCookie.
