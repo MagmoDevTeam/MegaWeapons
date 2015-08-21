@@ -46,8 +46,7 @@ public class Youtube extends JavaPlugin{
 				megasword.setItemMeta(imsword);
 				pi.addItem(megasword);
 				player.sendMessage(ChatColor.AQUA + "Here you go!");
-			}if(!player.hasPermission("megaweapons.msword"))
-			{
+			}else{
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
 			
@@ -71,8 +70,7 @@ public class Youtube extends JavaPlugin{
 				ItemStack arrow = new ItemStack(Material.ARROW, 1);
 				pi.addItem(arrow);
 				player.sendMessage(ChatColor.AQUA + "Here you go!");
-			}
-			if (!player.hasPermission("megaweapons.mbow")){
+			}else{
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
 			
@@ -93,8 +91,7 @@ public class Youtube extends JavaPlugin{
 				megahelmet.setItemMeta(imhelmet);
 				pi.addItem(megahelmet);
 				player.sendMessage(ChatColor.AQUA + "Here you go!");
-			}
-			if (!player.hasPermission("megaweapons.mhelmet")){
+			}else{
 				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 			}
 			
@@ -116,10 +113,9 @@ public class Youtube extends JavaPlugin{
 		 		megashirt.setItemMeta(imegashirt);
 		 		pi.addItem(megashirt);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
-		 	}
-		 	if (!player.hasPermission("megaweapons.mshirt")){
-		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
-		 	}
+		 	}else{
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}
 			
 			return true;
 		 }
@@ -139,10 +135,9 @@ public class Youtube extends JavaPlugin{
 		 		megapants.setItemMeta(imegapants);
 		 		pi.addItem(megapants);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
-		 	}
-		 	if (!player.hasPermission("megaweapons.mpants")){
-		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
-		 	}
+		 	}else{
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}
 			
 			return true;
 		 }
@@ -162,10 +157,9 @@ public class Youtube extends JavaPlugin{
 		 		megaboots.setItemMeta(imegaboots);
 		 		pi.addItem(megaboots);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
-		 	}
-		 	if (!player.hasPermission("megaweapons.mboots")){
-		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
-		 	}
+		 	}else{
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}
 			
 			return true;
 		 }
@@ -184,10 +178,9 @@ public class Youtube extends JavaPlugin{
 		 		megatato.setItemMeta(imegatato);
 		 		pi.addItem(megatato);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
-		 	}
-		 	if(!player.hasPermission("megaweapons.mtato")){
-		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
-		 	}
+		 	}else{
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}
 			
 			return true;
 		 }
@@ -206,10 +199,9 @@ public class Youtube extends JavaPlugin{
 		 		megacookie.setItemMeta(imegacookie);
 		 		pi.addItem(megacookie);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
-		 	}
-		 	if(!player.hasPermission("megaweapons.mcookie")){
-		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
-		 	}
+		 	}else{
+				player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
+			}
 			
 			return true;
 		 }
