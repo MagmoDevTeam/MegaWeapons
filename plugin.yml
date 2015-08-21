@@ -5,15 +5,22 @@ description: Adds OP weapons and armor into the game.
 commands:
   megasword:
      description: Gives MegaSword.
+     usage: /<command>
   megabow:
      description: Gives MegaBow.
+     usage: /<command>
   megahelmet:
     description: Gives MegaHelmet.
+     usage: /<command>
   megashirt:
      description: Gives MegaShirt.
+     usage: /<command>
   megapants:
      description: Gives MegaPants.
+     usage: /<command>
   megatato:
      description: Gives MegaTato.
+     usage: /<command>
   megacookie:
      description: Gives MegaCookie.
+     usage: /<command>
