@@ -1,25 +1,83 @@
 name: MegaWeapons
+version: 1.0
+description: Mega Weapons
+authors: [DJEwan, tymmc]
 main: me.DJ_Ewan.youtube.Youtube
-version: 2.0
+database: false
 commands:
-  megasword:
-     description: Gives MegaSword.
-     usage: /<command>
   megabow:
-     description: Gives MegaBow.
-     usage: /<command>
+    description: Gives you a mega bow.
+    aliases: [mb, mbow]
+    permission: megaweapons.mbow
+    usage: /megabow
+  megasword:
+    description: Gives you a mega sword.
+    aliases: [ms, msword]
+    permission: megaweapons.msword
+    usage: /megasword
   megahelmet:
-    description: Gives MegaHelmet.
-     usage: /<command>
-  megashirt:
-     description: Gives MegaShirt.
-     usage: /<command>
-  megapants:
-     description: Gives MegaPants.
-     usage: /<command>
-  megatato:
-     description: Gives MegaTato.
-     usage: /<command>
-  megacookie:
-     description: Gives MegaCookie.
-     usage: /<command>
+    description:
+    aliases: [mh, mhelmet]
+    permission: megaweapons.mhelmet
+    usage: /megahelmet 
+ megashirt:
+    description:
+    aliases: [mshirt]
+    permission: megaweapons.mshirt
+    usage: /megashirt
+ megapants:
+    description:
+    aliases: [mp, mpants]
+    permission: megaweapons.mpants
+    usage: /megapants
+ megaboots:
+    description:
+    aliases: [mboots]
+    permission: megaweapons.mboots
+    usage: /megaboots
+ megacookie:
+    description:
+    aliases: [mcookie]
+    permission: megaweapons.mcookie
+    usage: /megacookie
+ megapotato:
+    description:
+    aliases: [mtato, megatato, mpotato]
+    permission: megaweapons.mtato
+    usage: /megatato
+permissions:
+  megaweapons.*:
+    description: Gives access to ALL cmds.
+    children:
+      megaweapons.msword: true
+      megaweapons.mbow: true
+      megaweapons.mhelmet: true
+      megaweapons.mshirt: true
+      megaweapons.mpants: true
+      megaweapons.mboots: true
+      megaweapons.mcookie: true
+      megaweapons.mtato: true
+  megaweapons.msword:
+    description: Allows you to give yourself a MegaSword
+    default: op
+  megaweapons.mbow:
+    description: Allows you to give yourself a MegaBow
+    default: op
+  megaweapons.mhelmet:
+    description: Allows you to give yourself a MegaHelmet
+    default: op
+  megaweapons.mshirt:
+    description: Allows you to give yourself a MegaShirt
+    default: op
+  megaweapons.mpants:
+    description: Allows you to give yourself a MegaPants
+    default: op
+  megaweapons.mboots:
+    description: Allows you to give yourself a MegaBoots
+    default: op
+  megaweapons.mcookie:
+    description: Allows you to give yourself a MegaCookie
+    default: op
+  megaweapons.mtato:
+    description: Allows you to give yourself a MegaPotato
+    default: op
