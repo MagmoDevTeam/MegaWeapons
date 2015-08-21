@@ -32,7 +32,7 @@ public class Youtube extends JavaPlugin{
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args, PlayerInteractEvent e){
 		
-		if (commandLabel.equalsIgnoreCase("megasword")){
+		if (cmd.getName().equalsIggnoreCase("megasword") && sender instanceof Player){
 			Player player = (Player) sender;
 			if (player.hasPermission("megaweapons.msword"))
 			{
@@ -54,7 +54,7 @@ public class Youtube extends JavaPlugin{
 			return true;
 		}
 	
-		if (commandLabel.equalsIgnoreCase("megabow")){ 
+		if cmd.getName().equalsIggnoreCase("megabow") && sender instanceof Player){ 
 			Player player = (Player) sender;
 			if (player.hasPermission("megaweapons.mbow"))
 			{
@@ -78,7 +78,7 @@ public class Youtube extends JavaPlugin{
 			
 			return true;
 		 }
-		 if (commandLabel.equalsIgnoreCase("megahelmet")){ 
+		 if (cmd.getName().equalsIggnoreCase("megahelmet") && sender instanceof Player){ 
 		 	Player player = (Player) sender;
 			if (player.hasPermission("megaweapons.mhelmet"))
 			{
@@ -101,7 +101,7 @@ public class Youtube extends JavaPlugin{
 			return true;
 		 }
 		 
-		 if (commandLabel.equalsIgnoreCase("megashirt")){
+		 if (cmd.getName().equalsIggnoreCase("megashirt") && sender instanceof Player){
 		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mshirt"))
 		 	{
@@ -124,7 +124,7 @@ public class Youtube extends JavaPlugin{
 			return true;
 		 }
 		 
-		 if (commandLabel.equalsIgnoreCase("megapants")){
+		 if (cmd.getName().equalsIggnoreCase("megapants") && sender instanceof Player){
 		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mpants"))
 		 	{
@@ -147,7 +147,7 @@ public class Youtube extends JavaPlugin{
 			return true;
 		 }
 		 
-		 if (commandLabel.equalsIgnoreCase("megaboots")){
+		 if (cmd.getName().equalsIggnoreCase("megaboots") && sender instanceof Player){
 		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mboots"))
 		 	{
@@ -170,7 +170,7 @@ public class Youtube extends JavaPlugin{
 			return true;
 		 }
 		 
-		 if (commandLabel.equalsIgnoreCase("megatato")){
+		 if (cmd.getName().equalsIggnoreCase("megatato") && sender instanceof Player){
 		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mtato"))
 		 	{
@@ -192,7 +192,7 @@ public class Youtube extends JavaPlugin{
 			return true;
 		 }
 		 
-		 if (commandLabel.equalsIgnoreCase("megacookie")){
+		 if (cmd.getName().equalsIggnoreCase("megacookie") && sender instanceof Player){
 		 	Player player = (Player) sender;
 		 	if (player.hasPermission("megaweapons.mcookie"))
 		 	{
