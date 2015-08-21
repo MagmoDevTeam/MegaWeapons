@@ -161,7 +161,7 @@ public class Youtube extends JavaPlugin{
 		 		megaball.addUnsafeEnchantment(Enchantment.KNOCKBACK, 20);
 		 		megaball.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 15);
 		 		ItemMeta imegaball = megaball.getItemMeta();
-		 		imegaball.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGABOOTS" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		imegaball.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGABALL" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
 		 		megaball.setItemMeta(imegaball);
 		 		pi.addItem(megaball);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
