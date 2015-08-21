@@ -156,17 +156,17 @@ public class Youtube extends JavaPlugin{
 		 	if (player.hasPermission("megaweapons.mtato"))
 		 	{
 		 		PlayerInventory pi = player.getInventory();
-		 		ItemStack megaball = new ItemStack(Material.POTATO, 1);
-		 		megaball.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 32767);
-		 		megaball.addUnsafeEnchantment(Enchantment.KNOCKBACK, 20);
-		 		megaball.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 15);
-		 		ItemMeta imegaball = megaball.getItemMeta();
-		 		imegaball.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGATATO" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
-		 		megaball.setItemMeta(imegaball);
-		 		pi.addItem(megaball);
+		 		ItemStack megatato = new ItemStack(Material.POTATO, 1);
+		 		megatato.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 32767);
+		 		megatato.addUnsafeEnchantment(Enchantment.KNOCKBACK, 20);
+		 		megatato.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 15);
+		 		ItemMeta imegatato = megatato.getItemMeta();
+		 		imegatato.setDisplayName(ChatColor.GOLD + "" + ChatColor.MAGIC + "ii" + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "MEGATATO" + ChatColor.GOLD + "" + ChatColor.MAGIC + "ii");
+		 		megatato.setItemMeta(imegatato);
+		 		pi.addItem(megatato);
 		 		player.sendMessage(ChatColor.AQUA + "Here you go!");
 		 	}
-		 	if(!player.hasPermission("megaball.mtato")){
+		 	if(!player.hasPermission("megatato.mtato")){
 		 		player.sendMessage(ChatColor.DARK_RED + "You do not have permission!");
 		 	}
 		 }
